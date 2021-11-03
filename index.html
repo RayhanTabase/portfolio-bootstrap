@@ -19,17 +19,17 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
-    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top ">
+      <div class="container-fluid justify-content-center">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#headline">Section 1</a>
+            <a class="nav-link" href="#recent-works">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#recent-works">Section 2</a>
+            <a class="nav-link" href="#about-me">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Section 3</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -38,10 +38,11 @@
     <main>
       <section id="headline" class="text-center">
         <h1>
-          Hey there. I’m Salim.<br /><span class="highlight"
+          Hey there. I’m John Doe.<br /><span class="text-success"
             >I’m a software developer</span
           >
         </h1>
+        <br>
         <p>
           I can help you build a product , feature or website Look through some
           of my work and <br />
@@ -90,6 +91,7 @@
 
       <section id="recent-works">
         <h2 class="text-center">My Recent Works</h2>
+        <br>
 
         <ul class="container">
           <div class="row row-cols-3 card-align text-center">
@@ -219,15 +221,19 @@
 
       <section id="about-me">
         <h2 class="text-center">About me</h2>
+        <br>
         <p class="text-center"> I can help you build a product , feature or website Look through some of my work and <br>
           experience! If you like what you see and have a project you need coded, <br>
           don’t hestiate to contact me.
         </p>
+        <br>
         <div class="d-grid gap-2 col-2 mx-auto">
           <button type="button">Get My Resume</button>
         </div>
+        <br>
         <ul class="row row-cols-3 card-align">
           <li class="card">
+            <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h3 class="card-title">Languages</h3>
               <ul class="tags">
@@ -239,6 +245,7 @@
             </div>
           </li>
           <li class="card">
+            <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h3 class="card-title">Frameworks</h3>
               <ul class="tags">
@@ -250,6 +257,7 @@
             </div>
           </li>
           <li class="card">
+            <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h3 class="card-title">Skills</h3>
               <ul class="container mt-3">
@@ -264,22 +272,24 @@
         </ul>
       </section>
       <section id="contact">
-        <div class="row">
-          <h2 class="col">I'm always interested in hearing <br> about new projects, so if you'd <br> like to chat please get in touch.</h2>
-          <form class="col" action="#" method="post">
-            <ul>
-              <li>
+        <div class="container">
+          <div class="row">
+            <h2 class="col">I'm always interested in hearing <br> about new projects, so if you'd <br> like to chat please get in touch.</h2>
+            <form class="col" action="#" method="post">
+              <ul>
+                <li>
                   <input class="form-control" type="text" maxlength="30" placeholder="Full name" name="fullname" required>
-              </li>
-              <li>
+                </li>
+                <li>
                   <input class="form-control" type="email" placeholder="youraddress@gmail.com" name="email" required>
-              </li>
-              <li>
+                </li>
+                <li>
                   <textarea class="form-control" name="message" maxlength="500" placeholder="Enter text here" required></textarea>
-              </li>
-            </ul>
-            <button type="submit" class="btn btn-primary">Get in touch</button>
-          </form>
+                </li>
+              </ul>
+              <button type="submit" class="btn btn-primary">Get in touch</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>

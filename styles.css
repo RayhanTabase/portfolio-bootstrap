@@ -6,6 +6,12 @@ main {
   padding-top: 100px;
 }
 
+main section {
+  padding: 2em 1.5em 2em 1.5em;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
 .card-align {
   gap: 1rem;
   justify-content: center;

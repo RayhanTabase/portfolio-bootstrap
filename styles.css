@@ -1,0 +1,23 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+main section {
+  padding: 2em 1.5em 2em 1.5em;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.card-align {
+  gap: 1rem;
+}
+
+.card-align .card {
+  width: 370px;
+}
+
+.card .icon {
+  width: 80px;
+  background-color: antiquewhite;
+}

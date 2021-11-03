@@ -1,0 +1,16 @@
+ul {
+  list-style: none;
+}
+
+main {
+  padding-top: 100px;
+}
+
+.card-align {
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card-align .card {
+  width: 370px;
+}

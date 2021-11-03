@@ -1,128 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</head>
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#headline">Section 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#recent-works">Section 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Section 3</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
-    <div class="container-fluid">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#headline">Section 1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#recent-works">Section 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Section 3</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <main style="padding-top: 100px;">
-    <section id="headline">
-        <h1>Hey there. I’m Salim.<br><span class="highlight">I’m a software developer</span></h1>
-        <p> I can help you build a product , feature or website Look through some of my work and <br>
-            experience! If you like what you see and have a project you need coded, <br>
-            don’t hestiate to contact me.
+    <main>
+      <section id="headline" class="text-center">
+        <h1>
+          Hey there. I’m Salim.<br /><span class="highlight"
+            >I’m a software developer</span
+          >
+        </h1>
+        <p>
+          I can help you build a product , feature or website Look through some
+          of my work and <br />
+          experience! If you like what you see and have a project you need
+          coded, <br />
+          don’t hestiate to contact me.
         </p>
         <ul>
-            <li><a href="#"><img src="./static/images/Icons/github.png" alt="github-image"></a></li>
-            <li><a href="#"><img src="./static/images/Icons/linkedIn.png" alt="linkedIn-image"></a></li>
-            <li><a href="#"><img src="./static/images/Icons/angel_list.png" alt="angel_list-image"></a></li>
-            <li><a href="#"><img src="./static/images/Icons/twitter.png" alt="twitter-image"></a></li>
-            <li><a href="#"><img src="./static/images/Icons/medium.png" alt="medium-image"></a></li>
+          <li>
+            <a href="#"
+              ><img src="./static/images/Icons/github.png" alt="github-image"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./static/images/Icons/linkedIn.png"
+                alt="linkedIn-image"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./static/images/Icons/angel_list.png"
+                alt="angel_list-image"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./static/images/Icons/twitter.png" alt="twitter-image"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./static/images/Icons/medium.png" alt="medium-image"
+            /></a>
+          </li>
         </ul>
-        <button type="button"><img src="./static/images/Buttons/down_arrow.png" alt="down-arrow-image"></button>
-    </section>
+        <button type="button">
+          <img
+            src="./static/images/Buttons/down_arrow.png"
+            alt="down-arrow-image"
+          />
+        </button>
+      </section>
 
-    <section id="recent-works">
-        <h2>My Recent Works</h2>
+      <section id="recent-works">
+        <h2 class="text-center">My Recent Works</h2>
 
-        <ul>
-            <li>
-                <img src="./static/images/Projects/img-placeholder.png" alt="project-image">
-                <h3>Multi-Post Stories <br> Gain+Glory</h3>
-                <ul>
-                    <li>Ruby on rails</li>
-                    <li>css</li>
-                    <li>JavScript</li>
-                    <li>html</li>
+        <ul class="container">
+          <div class="row row-cols-3 card-align text-center">
+            <li class="card column">
+              <img
+                class="card-img-top"
+                src="./static/images/Projects/img-placeholder.png"
+                alt="project-image"
+              />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Multi-Post Stories <br />
+                  Gain+Glory
+                </h3>
+                <ul class="row">
+                  <li class="col">Ruby on rails</li>
+                  <li class="col">css</li>
+                  <li class="col">JavScript</li>
+                  <li class="col">html</li>
                 </ul>
-                <button type="button">See More</button>
+                <button class="btn btn-primary" type="button">See More</button>
+              </div>
             </li>
-            <li>
-                <img src="./static/images/Projects/img-placeholder.png" alt="project-image">
-                <h3>Multi-Post Stories <br> Gain+Glory</h3>
-                <ul>
-                    <li>Ruby on rails</li>
-                    <li>css</li>
-                    <li>JavScript</li>
-                    <li>html</li>
+            <li class="card column">
+              <img
+                class="card-img-top"
+                src="./static/images/Projects/img-placeholder.png"
+                alt="project-image"
+              />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Multi-Post Stories <br />
+                  Gain+Glory
+                </h3>
+                <ul class="row">
+                  <li class="col">Ruby on rails</li>
+                  <li class="col">css</li>
+                  <li class="col">JavScript</li>
+                  <li class="col">html</li>
                 </ul>
-                <button type="button">See More</button>
+                <button class="btn btn-primary" type="button">See More</button>
+              </div>
             </li>
-            <li>
-                <img src="./static/images/Projects/img-placeholder.png" alt="project-image">
-                <h3>Multi-Post Stories <br> Gain+Glory</h3>
-                <ul>
-                    <li>Ruby on rails</li>
-                    <li>css</li>
-                    <li>JavScript</li>
-                    <li>html</li>
+            <li class="card column">
+              <img
+                class="card-img-top"
+                src="./static/images/Projects/img-placeholder.png"
+                alt="project-image"
+              />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Multi-Post Stories <br />
+                  Gain+Glory
+                </h3>
+                <ul class="row">
+                  <li class="col">Ruby on rails</li>
+                  <li class="col">css</li>
+                  <li class="col">JavScript</li>
+                  <li class="col">html</li>
                 </ul>
-                <button type="button">See More</button>
+                <button class="btn btn-primary" type="button">See More</button>
+              </div>
             </li>
-            <li>
-                <img src="./static/images/Projects/img-placeholder.png" alt="project-image">
-                <h3>Multi-Post Stories <br> Gain+Glory</h3>
-                <ul>
-                    <li>Ruby on rails</li>
-                    <li>css</li>
-                    <li>JavScript</li>
-                    <li>html</li>
+            <li class="card column">
+              <img
+                class="card-img-top"
+                src="./static/images/Projects/img-placeholder.png"
+                alt="project-image"
+              />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Multi-Post Stories <br />
+                  Gain+Glory
+                </h3>
+                <ul class="row">
+                  <li class="col">Ruby on rails</li>
+                  <li class="col">css</li>
+                  <li class="col">JavScript</li>
+                  <li class="col">html</li>
                 </ul>
-                <button type="button">See More</button>
+                <button class="btn btn-primary" type="button">See More</button>
+              </div>
             </li>
-            <li>
-                <img src="./static/images/Projects/img-placeholder.png" alt="project-image">
-                <h3>Multi-Post Stories <br> Gain+Glory</h3>
-                <ul>
-                    <li>Ruby on rails</li>
-                    <li>css</li>
-                    <li>JavScript</li>
-                    <li>html</li>
+            <li class="card column">
+              <img
+                class="card-img-top"
+                src="./static/images/Projects/img-placeholder.png"
+                alt="project-image"
+              />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Multi-Post Stories <br />
+                  Gain+Glory
+                </h3>
+                <ul class="row">
+                  <li class="col">Ruby on rails</li>
+                  <li class="col">css</li>
+                  <li class="col">JavScript</li>
+                  <li class="col">html</li>
                 </ul>
-                <button type="button">See More</button>
+                <button class="btn btn-primary" type="button">See More</button>
+              </div>
             </li>
-            <li>
-                <img src="./static/images/Projects/img-placeholder.png" alt="project-image">
-                <h3>Multi-Post Stories <br> Gain+Glory</h3>
-                <ul>
-                    <li>Ruby on rails</li>
-                    <li>css</li>
-                    <li>JavScript</li>
-                    <li>html</li>
+            <li class="card column">
+              <img
+                class="card-img-top"
+                src="./static/images/Projects/img-placeholder.png"
+                alt="project-image"
+              />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Multi-Post Stories <br />
+                  Gain+Glory
+                </h3>
+                <ul class="row">
+                  <li class="col">Ruby on rails</li>
+                  <li class="col">css</li>
+                  <li class="col">JavScript</li>
+                  <li class="col">html</li>
                 </ul>
-                <button type="button">See More</button>
+                <button class="btn btn-primary" type="button">See More</button>
+              </div>
             </li>
+          </div>
         </ul>
-    </section>
+      </section>
 
-    <section id="about-me">
-
-    </section>
-    <section id="contact">
-
-    </section>
-  </main>
-  
-</body>
+      <section id="about-me"></section>
+      <section id="contact"></section>
+    </main>
+  </body>
 </html>

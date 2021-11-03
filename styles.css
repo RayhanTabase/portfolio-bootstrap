@@ -1,9 +1,6 @@
 ul {
   list-style: none;
-}
-
-main {
-  padding-top: 100px;
+  padding: 0;
 }
 
 main section {
@@ -14,9 +11,13 @@ main section {
 
 .card-align {
   gap: 1rem;
-  justify-content: center;
 }
 
 .card-align .card {
   width: 370px;
+}
+
+.card .icon {
+  width: 80px;
+  background-color: antiquewhite;
 }

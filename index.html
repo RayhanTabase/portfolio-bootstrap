@@ -19,30 +19,46 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
-    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top ">
-      <div class="container-fluid justify-content-center">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#recent-works">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-me">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarTogglerDemo03"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#recent-works">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <main>
+    <main class="pt-5">
       <section id="headline" class="text-center">
         <h1>
           Hey there. I’m John Doe.<br /><span class="text-success"
             >I’m a software developer</span
           >
         </h1>
-        <br>
+        <br />
         <p>
           I can help you build a product , feature or website Look through some
           of my work and <br />
@@ -50,51 +66,44 @@
           coded, <br />
           don’t hestiate to contact me.
         </p>
-        <ul>
-          <li>
+        <ul class="d-flex justify-content-center">
+          <li class="me-2">
+            <a href="#"><img src="./images/github.svg" alt="github-image" /></a>
+          </li>
+          <li class="me-2">
             <a href="#"
-              ><img src="./static/images/Icons/github.png" alt="github-image"
+              ><img src="./images/linkedin.svg" alt="linkedIn-image"
             /></a>
           </li>
-          <li>
+          <li class="me-2">
             <a href="#"
-              ><img
-                src="./static/images/Icons/linkedIn.png"
-                alt="linkedIn-image"
+              ><img src="./images/angellist.svg" alt="angel_list-image"
             /></a>
           </li>
-          <li>
+          <li class="me-2">
             <a href="#"
-              ><img
-                src="./static/images/Icons/angel_list.png"
-                alt="angel_list-image"
+              ><img src="./images/twitter.svg" alt="twitter-image"
             /></a>
           </li>
-          <li>
-            <a href="#"
-              ><img src="./static/images/Icons/twitter.png" alt="twitter-image"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./static/images/Icons/medium.png" alt="medium-image"
-            /></a>
+          <li class="">
+            <a href="#"><img src="./images/medium.svg" alt="medium-image" /></a>
           </li>
         </ul>
-        <button type="button">
-          <img
-            src="./static/images/Buttons/down_arrow.png"
-            alt="down-arrow-image"
-          />
-        </button>
+        <img
+          src="./images/button-arrow.svg"
+          alt="down-arrow-image"
+          class="mt-5"
+        />
       </section>
 
       <section id="recent-works">
         <h2 class="text-center">My Recent Works</h2>
-        <br>
+        <br />
 
         <ul class="container">
-          <div class="row row-cols-3 card-align text-center">
+          <div
+            class="row row-cols-3 card-align justify-content-center text-center"
+          >
             <li class="card column">
               <img
                 class="card-img-top"
@@ -106,11 +115,11 @@
                   Multi-Post Stories <br />
                   Gain+Glory
                 </h3>
-                <ul class="row">
-                  <li class="col">Ruby on rails</li>
-                  <li class="col">css</li>
-                  <li class="col">JavScript</li>
-                  <li class="col">html</li>
+                <ul class="tags mb-3">
+                  <li class="badge bg-primary">Ruby on rails</li>
+                  <li class="badge bg-primary">css</li>
+                  <li class="badge bg-primary">JavScript</li>
+                  <li class="badge bg-primary">html</li>
                 </ul>
                 <button class="btn btn-primary" type="button">See More</button>
               </div>
@@ -126,11 +135,11 @@
                   Multi-Post Stories <br />
                   Gain+Glory
                 </h3>
-                <ul class="row">
-                  <li class="col">Ruby on rails</li>
-                  <li class="col">css</li>
-                  <li class="col">JavScript</li>
-                  <li class="col">html</li>
+                <ul class="tags mb-3">
+                  <li class="badge bg-primary">Ruby on rails</li>
+                  <li class="badge bg-primary">css</li>
+                  <li class="badge bg-primary">JavScript</li>
+                  <li class="badge bg-primary">html</li>
                 </ul>
                 <button class="btn btn-primary" type="button">See More</button>
               </div>
@@ -146,11 +155,11 @@
                   Multi-Post Stories <br />
                   Gain+Glory
                 </h3>
-                <ul class="row">
-                  <li class="col">Ruby on rails</li>
-                  <li class="col">css</li>
-                  <li class="col">JavScript</li>
-                  <li class="col">html</li>
+                <ul class="tags mb-3">
+                  <li class="badge bg-primary">Ruby on rails</li>
+                  <li class="badge bg-primary">css</li>
+                  <li class="badge bg-primary">JavScript</li>
+                  <li class="badge bg-primary">html</li>
                 </ul>
                 <button class="btn btn-primary" type="button">See More</button>
               </div>
@@ -166,51 +175,55 @@
                   Multi-Post Stories <br />
                   Gain+Glory
                 </h3>
-                <ul class="row">
-                  <li class="col">Ruby on rails</li>
-                  <li class="col">css</li>
-                  <li class="col">JavScript</li>
-                  <li class="col">html</li>
+                <ul class="tags mb-3">
+                  <li class="badge bg-primary">Ruby on rails</li>
+                  <li class="badge bg-primary">css</li>
+                  <li class="badge bg-primary">JavScript</li>
+                  <li class="badge bg-primary">html</li>
                 </ul>
                 <button class="btn btn-primary" type="button">See More</button>
               </div>
             </li>
             <li class="card column">
-              <img
-                class="card-img-top"
-                src="./static/images/Projects/img-placeholder.png"
-                alt="project-image"
-              />
+              <div>
+                <img
+                  class="card-img-top"
+                  src="./static/images/Projects/img-placeholder.png"
+                  alt="project-image"
+                />
+              </div>
               <div class="card-body">
                 <h3 class="card-card-title">
                   Multi-Post Stories <br />
                   Gain+Glory
                 </h3>
-                <ul class="row">
-                  <li class="col">Ruby on rails</li>
-                  <li class="col">css</li>
-                  <li class="col">JavScript</li>
-                  <li class="col">html</li>
+                <ul class="tags mb-3">
+                  <li class="badge bg-primary">Ruby on rails</li>
+                  <li class="badge bg-primary">css</li>
+                  <li class="badge bg-primary">JavScript</li>
+                  <li class="badge bg-primary">html</li>
                 </ul>
                 <button class="btn btn-primary" type="button">See More</button>
               </div>
             </li>
             <li class="card column">
-              <img
-                class="card-img-top"
-                src="./static/images/Projects/img-placeholder.png"
-                alt="project-image"
-              />
+              <div>
+                <img
+                  class="card-img-top"
+                  src="./static/images/Projects/img-placeholder.png"
+                  alt="project-image"
+                />
+              </div>
               <div class="card-body">
                 <h3 class="card-card-title">
                   Multi-Post Stories <br />
                   Gain+Glory
                 </h3>
-                <ul class="row">
-                  <li class="col">Ruby on rails</li>
-                  <li class="col">css</li>
-                  <li class="col">JavScript</li>
-                  <li class="col">html</li>
+                <ul class="tags mb-3">
+                  <li class="badge bg-primary">Ruby on rails</li>
+                  <li class="badge bg-primary">css</li>
+                  <li class="badge bg-primary">JavScript</li>
+                  <li class="badge bg-primary">html</li>
                 </ul>
                 <button class="btn btn-primary" type="button">See More</button>
               </div>
@@ -221,51 +234,72 @@
 
       <section id="about-me">
         <h2 class="text-center">About me</h2>
-        <br>
-        <p class="text-center"> I can help you build a product , feature or website Look through some of my work and <br>
-          experience! If you like what you see and have a project you need coded, <br>
+        <br />
+        <p class="text-center">
+          I can help you build a product , feature or website Look through some
+          of my work and <br />
+          experience! If you like what you see and have a project you need
+          coded, <br />
           don’t hestiate to contact me.
         </p>
-        <br>
+        <br />
         <div class="d-grid gap-2 col-2 mx-auto">
-          <button type="button">Get My Resume</button>
+          <button type="button" class="btn btn-primary">Get My Resume</button>
         </div>
-        <br>
-        <ul class="row row-cols-3 card-align">
+        <br />
+        <ul class="row row-cols-3 card-align justify-content-center">
           <li class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="icon rounded-circle align-self-center">
+              <img
+                src="./images/icon-languages.svg"
+                class="card-img-top"
+                alt="Languages Icon"
+              />
+            </div>
+            <div class="card-body text-center">
               <h3 class="card-title">Languages</h3>
               <ul class="tags">
                 <li class="badge bg-primary">JavaScript</li>
                 <li class="badge bg-primary">Ruby</li>
-                <li class="badge bg-primary">Html </li>
+                <li class="badge bg-primary">Html</li>
                 <li class="badge bg-primary">CSS</li>
               </ul>
             </div>
           </li>
           <li class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="icon rounded-circle align-self-center">
+              <img
+                src="./images/icon-frameworks.svg"
+                class="card-img-top"
+                alt="Frameworks Icon"
+              />
+            </div>
+            <div class="card-body text-center">
               <h3 class="card-title">Frameworks</h3>
               <ul class="tags">
-                  <li class="badge bg-primary">Bootstrap</li>
-                  <li class="badge bg-primary">Ruby on rails</li>
-                  <li class="badge bg-primary">RSpec</li>
-                  <li class="badge bg-primary">Selenium</li>
+                <li class="badge bg-primary">Bootstrap</li>
+                <li class="badge bg-primary">Ruby on rails</li>
+                <li class="badge bg-primary">RSpec</li>
+                <li class="badge bg-primary">Selenium</li>
               </ul>
             </div>
           </li>
           <li class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="icon rounded-circle align-self-center">
+              <img
+                src="./images/icon-skills.svg"
+                class="card-img-top"
+                alt="Skills Icon"
+              />
+            </div>
+            <div class="card-body text-center">
               <h3 class="card-title">Skills</h3>
               <ul class="container mt-3">
-                  <li class="badge bg-primary">Codekit</li>
-                  <li class="badge bg-primary">GitHub</li>
-                  <li class="badge bg-primary">Codepen</li>
-                  <li class="badge bg-primary">Gitlab</li>
-                  <li class="badge bg-primary">Terminal</li>
+                <li class="badge bg-primary">Codekit</li>
+                <li class="badge bg-primary">GitHub</li>
+                <li class="badge bg-primary">Codepen</li>
+                <li class="badge bg-primary">Gitlab</li>
+                <li class="badge bg-primary">Terminal</li>
               </ul>
             </div>
           </li>
@@ -274,20 +308,45 @@
       <section id="contact">
         <div class="container">
           <div class="row">
-            <h2 class="col">I'm always interested in hearing <br> about new projects, so if you'd <br> like to chat please get in touch.</h2>
+            <h2 class="col">
+              I'm always interested in hearing <br />
+              about new projects, so if you'd <br />
+              like to chat please get in touch.
+            </h2>
             <form class="col" action="#" method="post">
               <ul>
                 <li>
-                  <input class="form-control" type="text" maxlength="30" placeholder="Full name" name="fullname" required>
+                  <input
+                    class="form-control"
+                    type="text"
+                    maxlength="30"
+                    placeholder="Full name"
+                    name="fullname"
+                    required
+                  />
                 </li>
                 <li>
-                  <input class="form-control" type="email" placeholder="youraddress@gmail.com" name="email" required>
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="youraddress@gmail.com"
+                    name="email"
+                    required
+                  />
                 </li>
                 <li>
-                  <textarea class="form-control" name="message" maxlength="500" placeholder="Enter text here" required></textarea>
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    maxlength="500"
+                    placeholder="Enter text here"
+                    required
+                  ></textarea>
                 </li>
               </ul>
-              <button type="submit" class="btn btn-primary">Get in touch</button>
+              <button type="submit" class="btn btn-primary">
+                Get in touch
+              </button>
             </form>
           </div>
         </div>
